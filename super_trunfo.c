@@ -12,7 +12,7 @@ int main (){
 
     printf("Carta 1: ");
     printf("Digite uma letra(de A a H, cada uma representando um dos oito estados): ");
-    scanf("%c", &estado1);
+    scanf(" %c", &estado1);
     printf("Digite o codigo da carta(A letra do estado seguida de um numero de 01 a 04 (ex: A01, B03).):");
     scanf("%3s", codigo1);
     while(getchar() != '\n'); // Clear the newline character from the input buffer
@@ -30,7 +30,7 @@ int main (){
 
     printf("Carta 2: ");
     printf("Digite uma letra(de A a H, cada uma representando um dos oito estados): ");
-    scanf("%c", &estado2);
+    scanf(" %c", &estado2);
     printf("Digite o codigo da carta(A letra do estado seguida de um numero de 01 a 04 (ex: A01, B03).):");
     scanf("%3s", codigo2);
     while(getchar() != '\n'); // Clear the newline character from the input buffer
@@ -55,6 +55,8 @@ int main (){
     printf("\n PIB: %.2f bilhoes de reais", pib1);
     printf("\n Numero de Pontos Turisticos: %d", pt_turistico1);
 
+    printf("\n------------------------------");
+
     printf("\n Carta 2: ");
     printf("\n Estado: %c", estado2);
     printf("\n Codigo: %s", codigo2);
@@ -63,4 +65,4 @@ int main (){
     printf("\n Area: %.2f km²", area2);
     printf("\n PIB: %.2f bilhoes de reais", pib2);
     printf("\n Numero de Pontos Turisticos: %d", pt_turistico2);
-};S
+};
